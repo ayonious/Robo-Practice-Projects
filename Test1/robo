@@ -1,0 +1,18 @@
+#!/bin/bash
+
+case "$(uname -s)" in
+   
+   Darwin)
+     ../robo-tools/robo_darwin_amd64 "$@"
+     ;;
+
+   Linux)
+     ../robo-tools/robo_linux_amd64 "$@"
+     ;;
+
+   *)
+     echo 'Unsupported OS'
+     exit 1
+     ;;
+esac
+
