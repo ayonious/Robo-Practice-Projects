@@ -14,7 +14,7 @@ create-jar:
 
 
 clean-run:
-  summary: create jar file and put it in target folder
+  summary: clean packages and then runs the project
   command: |
     mvn clean package
     mvn exec:java -Dexec.mainClass="com.ayon.app.App" 
