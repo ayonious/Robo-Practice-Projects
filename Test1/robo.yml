@@ -1,0 +1,20 @@
+variables:
+  app: some-variable1
+
+compile:
+  summary: compiles the project
+  command: |
+    mvn compile
+ 
+
+create-jar:
+  summary: create jar file and put it in target folder
+  command: |
+    mvn clean package
+
+
+clean-run:
+  summary: create jar file and put it in target folder
+  command: |
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.ayon.app.App" 

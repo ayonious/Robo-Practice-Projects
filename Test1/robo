@@ -3,11 +3,11 @@
 case "$(uname -s)" in
    
    Darwin)
-     ../robo-tools/robo_darwin_amd64 "$@"
+     robo-tools/robo_darwin_amd64 "$@"
      ;;
 
    Linux)
-     ../robo-tools/robo_linux_amd64 "$@"
+     robo-tools/robo_linux_amd64 "$@"
      ;;
 
    *)
@@ -15,4 +15,3 @@ case "$(uname -s)" in
      exit 1
      ;;
 esac
-
