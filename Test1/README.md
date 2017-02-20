@@ -1,0 +1,2 @@
+# Simplest maven project
+
